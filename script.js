@@ -68,3 +68,13 @@ daysTag.addEventListener('click', e => {
         renderCalendar();
         }
 })
+
+
+
+function setInterval(){
+    setTimeout(()=>{
+        date = new Date();
+        renderCalendar();
+        setInterval();
+    }, 500);
+}
